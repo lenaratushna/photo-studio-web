@@ -13,6 +13,14 @@ window.addEventListener('load', () => {
         });
     }
     ibg();
+
+    const menuBurger = document.querySelector('.burger');
+    const headerMenu = document.querySelector('.header__menu');
+
+    menuBurger.addEventListener('click', () => {
+        menuBurger.classList.toggle('active');
+        headerMenu.classList.toggle('active');
+    });
 });
 
 
